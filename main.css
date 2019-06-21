@@ -1,0 +1,126 @@
+body { /* dark mode best mode */
+    background-color:#232425;
+}
+.navbar-light .navbar-brand { /* Navigaton CHASE KUHN - COLOR */
+    color: rgb(255, 74, 74);
+    font-size: 25px;
+}
+
+.navbar-light .navbar-brand:hover{ /* Header "CHASE KUHN" hover color change */
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover { /* Navigation links hover effects */
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.63);
+    border-radius: .95rem;
+    transition: 0.2s;
+}
+
+.navbar-light .navbar-nav .nav-link { /* Home, About, Skills, etc... */
+    color: rgb(255, 74, 74);
+    
+}
+
+.bg-dark { /* Navigation bar color */
+    background-color: #2e3033!important; 
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgb(24, 24, 24);
+    border-radius: .95rem;
+}
+
+.masthead { /* Header Picture */
+    height: 50vh;
+    min-height: 500px;
+    background-image: url('assets/reddust.jpg');
+    color:white;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .font-weight-light { /* Name on picture "Chase Kuhn" */
+      font-size: 120px;
+      font-family: Raleway 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .font-weight-light:hover{
+      font-size: 120px;
+      transition: 1s;
+  }
+
+  .lead { /* Second text ".Net Developer" */
+      font-size: 40px;
+  }
+
+  ul#horizontal li { /* centers */
+    display:inline;
+    margin: center;
+    padding-left: 0;
+}
+
+ul { /* perfectly centers uls */
+padding-inline-start: 0%;   
+}
+
+  .icons{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
+}
+.skills{
+  width: 70px;
+  height: 70px;
+}
+.projects{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+  padding: 3px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
+}
+
+.projects:hover{
+    opacity: 0.3;
+    transition: 0.4s ease-out;
+  }
+
+html{ /* navigation links transition to anchor smoothly */
+    scroll-behavior: smooth;
+}
+
+
+.icons:hover{ /* slight opacity added to links when hovered */
+    opacity: 0.4;
+}
+
+.centerthedamnthing{ /* centers the damn thing */
+    text-align: center;
+}
+
+  footer { /* footer props */
+    position: bottom;
+    height: 140px;
+    padding-top: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2e3033;
+    color: rgb(114, 114, 114);
+    text-align: center;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,8);
+ }
+
+ .jumbotron-fluid{ /* bootstrap insert box */
+    background-color: #2e3033;
+    color: white;
+    border: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,5);
+ }
