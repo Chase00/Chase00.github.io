@@ -45,9 +45,29 @@ body { /* dark mode best mode */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.83);
     
   }
 
+  hr {
+      background-color: white;
+      margin-left: 12vw;
+      margin-right: 12vw;
+  }
+
+  h1 {
+    font-family: 'Raleway', 'Segoe UI';
+    font-size: 75px;
+  }
+
+  .hello-text{
+    margin-left: 6vw;
+  }
+
+  .body-items{
+      margin-left: 7vw;
+      margin-right: 7vw;
+  }
   
   .font-weight-light { /* Name on picture "Chase Kuhn" */
       font-size: 120px;
@@ -63,6 +83,7 @@ body { /* dark mode best mode */
 
   .lead { /* Second text "Software Developer" */
       font-size: 40px;
+      font-family: 'Raleway', 'Segoe UI';
   }
 
   ul#horizontal li { /* centers */
@@ -83,6 +104,16 @@ padding-inline-start: 0%;
 .skills{
   width: 70px;
   height: 70px;
+}
+
+.skill-text{
+    color: rgb(255, 74, 74);
+    border-style: solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: rgb(255, 74, 74);
+    border-radius: 1px;
+    border-width: 2px;
 }
 
 ul#skillsalign li { /* centers */
