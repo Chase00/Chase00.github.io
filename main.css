@@ -10,6 +10,7 @@ body { /* dark mode best mode */
 
 .navbar-light .navbar-brand:hover{ /* Header "CHASE KUHN" hover color change */
     color: white;
+    transition: 0.5s;
 }
 
 .navbar-light .navbar-nav .nav-link:hover { /* Navigation links hover effects */
@@ -107,8 +108,8 @@ padding-inline-start: 0%;
 }
 
 .skill-div {
-    height: 10vw;
-    width: 30vw;
+    height: 10vh;
+    width: 40vh;
     text-align: center;
     margin: 0 auto;
 }
