@@ -193,3 +193,17 @@ html{ /* navigation links transition to anchor smoothly */
  ::selection {
     background: #ff9f9f; /* WebKit/Blink Browsers */
   }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255, 74, 74);
+}
