@@ -116,8 +116,6 @@ padding-inline-start: 0%;
 
 .skill-text{
     color: rgb(255, 74, 74);
-    position: relative;
-    z-index: 3;
     background: transparent;
     font-size: 18px;
     border-color: rgb(255, 74, 74);
@@ -142,7 +140,6 @@ ul#skillsalign li { /* centers */
 }
 
 .projects{
-  border-radius: 50%;
   width: 250px;
   height: 250px;
   margin: 15px;
@@ -150,11 +147,31 @@ ul#skillsalign li { /* centers */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
 }
 
+.card.mb-3{
+    background-color: #1d1f20;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+.project-text{
+    font-family: 'Raleway', 'Segoe UI';
+    color: white;
+    font-size: 30px;
+}
+
 .projects:hover{
     opacity: 0.3;
     transition: 0.4s ease-out;
   }
-
+  
 html{ /* navigation links transition to anchor smoothly */
     scroll-behavior: smooth;
 }
