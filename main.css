@@ -148,8 +148,16 @@ ul#skillsalign li { /* centers */
 .card.mb-3{
     background-color: #1d1f20;
     border-radius: 15px;
-    border: none;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
+    color: white;
+}
+
+.card.mb-3:hover{
+    background-color: #181a1a;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    transition: 0.5s;
 }
 
 .row-eq-height {
@@ -159,10 +167,17 @@ ul#skillsalign li { /* centers */
     display:         flex;
   }
 
-.project-text{
+.project-title{
     font-family: 'Raleway', 'Segoe UI';
     color: white;
     font-size: 30px;
+}
+
+.project-text{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
 }
 
 .projects:hover{
