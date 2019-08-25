@@ -108,7 +108,6 @@ padding-inline-start: 0%;
 }
 
 .skill-div {
-    height: 10vh;
     width: 40vh;
     text-align: center;
     margin: 0 auto;
@@ -126,7 +125,6 @@ padding-inline-start: 0%;
     display: inline-block;
     border-radius: 0.6em;
     text-transform: uppercase;
-    transition: all 0.2s linear;
     text-decoration: none;
 }
 
