@@ -74,6 +74,7 @@ body { /* dark mode best mode */
       font-size: 120px;
       /*font-family: "Gloria Hallelujah", Raleway, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
       font-family: 'Raleway', 'Segoe UI';
+      text-shadow: 2px 2px 3px #131313;
 
   }
 
@@ -85,6 +86,7 @@ body { /* dark mode best mode */
   .lead { /* Second text "Software Developer" */
       font-size: 40px;
       font-family: 'Raleway', 'Segoe UI';
+      text-shadow: 2px 2px 3px #131313;
   }
 
   ul#horizontal li { /* centers */
@@ -96,11 +98,11 @@ ul { /* perfectly centers uls */
 padding-inline-start: 0%;   
 }
 
-  .icons{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
+.icons{
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
 }
 .skills{
   width: 70px;
@@ -192,6 +194,7 @@ html{ /* navigation links transition to anchor smoothly */
 
 .icons:hover{ /* slight opacity added to links when hovered */
     opacity: 0.4;
+    transition: 0.4s
 }
 
 .centerthedamnthing{ /* centers the damn thing */
@@ -208,8 +211,7 @@ html{ /* navigation links transition to anchor smoothly */
     background-color: #2e3033;
     color: rgb(114, 114, 114);
     text-align: center;
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,8);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.83);
  }
 
  .jumbotron-fluid{ /* bootstrap insert box */
