@@ -1,34 +1,93 @@
-body { /* dark mode best mode */
+/* ================================== HTML & Body ================================== */
+
+
+body { /* Site background color */
     background-color:#232425;
 }
+
+html{ /* navigation links transition to anchor smoothly */
+    scroll-behavior: smooth;
+}
+
+.jumbotron-fluid{ /* Bootstrap jumbotron elements */
+    background-color: #2e3033;
+    color: white;
+    border: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,5);
+    border-radius: 0.8vw
+ }
+
+/* ================================== Scrollbar ================================== */
+
+
+::selection { /* Selection Hover */
+    background: #ff9f9f;
+  }
+
+::-webkit-scrollbar { /* Scrollbar track width */
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track { /* Scroll area color */
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb { /* Scrollbar color */
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255, 74, 74);
+}
+
+
+/* ================================== Navigation Bar / Header Box ================================== */
+
+
 .navbar-light .navbar-brand { /* Navigaton CHASE KUHN - COLOR */
+    font-family: 'Raleway', 'Segoe UI';
     color: rgb(255, 74, 74);
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .navbar-light .navbar-brand:hover{ /* Header "CHASE KUHN" hover color change */
     color: white;
+    transition: 0.5s;
+}
+
+.font-weight-light { /* Name on header box "Chase Kuhn" */
+    font-size: 120px;
+    font-family: 'Raleway', 'Segoe UI';
+    text-shadow: 2px 2px 3px #131313;
+}
+
+.lead { /* Second text "Software Developer" */
+    font-size: 40px;
+    font-family: 'Raleway', 'Segoe UI';
+    text-shadow: 2px 2px 3px #131313;
 }
 
 .navbar-light .navbar-nav .nav-link:hover { /* Navigation links hover effects */
     color: white;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.63);
-    border-radius: .95rem;
     transition: 0.2s;
 }
 
 .navbar-light .navbar-nav .nav-link { /* Home, About, Skills, etc... */
+    font-family: 'Raleway', 'Segoe UI';
     color: rgb(255, 74, 74);
-    
+    font-size: 25px;    
 }
 
 .bg-dark { /* Navigation bar color */
     background-color: #2e3033!important; 
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.83);
 }
 
-.navbar-light .navbar-toggler {
-    border-color: rgb(24, 24, 24);
-    border-radius: .95rem;
+.navbar-light .navbar-toggler { /* Bootstrap navbar hamburger */
+    border-color: rgb(255, 74, 74);
+    border-radius: .45rem;
+    border-width: 2px;
 }
 
 .masthead { /* Header Picture */
@@ -39,71 +98,137 @@ body { /* dark mode best mode */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    
-  }
-  
-  .font-weight-light { /* Name on picture "Chase Kuhn" */
-      font-size: 120px;
-      font-family: Raleway 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.83); 
   }
 
-  .font-weight-light:hover{
-      font-size: 120px;
-      transition: 1s;
+
+/* ================================== About Section ================================== */
+
+  hr { /* Horizonal Rule color & size */
+      background-color: white;
+      margin-left: 12vw;
+      margin-right: 12vw;
   }
 
-  .lead { /* Second text ".Net Developer" */
-      font-size: 40px;
+  h1 { /* Title elements */
+    font-family: 'Raleway', 'Segoe UI';
+    font-size: 75px;
+    text-align: center;
   }
 
-  ul#horizontal li { /* centers */
-    display:inline;
-    margin: center;
-    padding-left: 0;
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hello-text{ /* Hello! */
+    margin-left: 7vw;
+    font-family: 'Raleway', 'Segoe UI';
+    font-size: 75px;
+  }
+
+  .body-items{ /* Pushes the "About" section text inward */
+      margin-left: 7vw;
+      margin-right: 7vw;
+  }
+
+  ul { /*  centers uls */
+    padding-inline-start: 0%;   
 }
 
-ul { /* perfectly centers uls */
-padding-inline-start: 0%;   
+/* ================================== Skills ================================== */
+
+
+.skill-div { /* Skill tag section */
+    width: 40vh;
+    text-align: center;
+    margin: 0 auto;
 }
 
-  .icons{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+.skill-text{ /* Skills tag text */
+    color: rgb(255, 74, 74);
+    position: relative;
+    background: transparent;
+    font-size: 18px;
+    border-color: rgb(255, 74, 74);
+    border-style: solid;
+    border-width: 1.4px;
+    padding: 3px 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 0.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* ================================== Projects ================================== */
+
+
+.card.mb-3{ /* Project cards */
+    background-color: #1d1f20;
+    border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
-}
-.skills{
-  width: 70px;
-  height: 70px;
-}
-.projects{
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  margin: 15px;
-  padding: 3px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.projects:hover{
-    opacity: 0.3;
-    transition: 0.4s ease-out;
-  }
-
-html{ /* navigation links transition to anchor smoothly */
-    scroll-behavior: smooth;
+.card.mb-3:hover{ /* Project card hover effect */
+    background-color: #181a1a;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    transition: 0.3s;
+    opacity: 0.6;
 }
 
-
-.icons:hover{ /* slight opacity added to links when hovered */
-    opacity: 0.4;
+.row-eq-height { /* Makes the card elements responsive & all the same height */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
-.centerthedamnthing{ /* centers the damn thing */
+.project-title{ /* Project Titles */
+    font-family: 'Raleway', 'Segoe UI';
+    color: white;
+    font-size: 30px;
+}
+
+.project-text{ /* Project description */
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.center-element{ /* centers the titles on projects */
     text-align: center;
 }
 
-  footer { /* footer props */
+
+/* ================================== Footer/Icons ================================== */
+
+
+.icons { /* Github & Linkedin Icons */
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.icons:hover{ /* Icon hover effect */
+    opacity: 0.4;
+    transition: 0.4s
+}
+
+ul#horizontal li { /* Icons displayed inline & centered */
+    display: inline;
+    margin: center;
+}
+
+
+footer { /* footer props */
     position: bottom;
     height: 140px;
     padding-top: 30px;
@@ -113,14 +238,5 @@ html{ /* navigation links transition to anchor smoothly */
     background-color: #2e3033;
     color: rgb(114, 114, 114);
     text-align: center;
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,8);
- }
-
- .jumbotron-fluid{ /* bootstrap insert box */
-    background-color: #2e3033;
-    color: white;
-    border: 10px;
-    margin-bottom: 60px;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.83);
  }
