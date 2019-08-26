@@ -1,6 +1,48 @@
-body { /* dark mode best mode */
+/* ================================== HTML & Body ================================== */
+
+
+body { /* Site background color */
     background-color:#232425;
 }
+
+html{ /* navigation links transition to anchor smoothly */
+    scroll-behavior: smooth;
+}
+
+.jumbotron-fluid{ /* Bootstrap jumbotron elements */
+    background-color: #2e3033;
+    color: white;
+    border: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,5);
+    border-radius: 0.4vw
+ }
+
+/* ================================== Scrollbar ================================== */
+
+
+::selection { /* Selection Hover */
+    background: #ff9f9f;
+  }
+
+::-webkit-scrollbar { /* Scrollbar track width */
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track { /* Scroll area color */
+    background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb { /* Scrollbar color */
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255, 74, 74);
+}
+
+
+/* ================================== Navigation Bar / Header Box ================================== */
+
+
 .navbar-light .navbar-brand { /* Navigaton CHASE KUHN - COLOR */
     font-family: 'Raleway', 'Segoe UI';
     color: rgb(255, 74, 74);
@@ -13,6 +55,18 @@ body { /* dark mode best mode */
     transition: 0.5s;
 }
 
+.font-weight-light { /* Name on header box "Chase Kuhn" */
+    font-size: 120px;
+    font-family: 'Raleway', 'Segoe UI';
+    text-shadow: 2px 2px 3px #131313;
+}
+
+.lead { /* Second text "Software Developer" */
+    font-size: 40px;
+    font-family: 'Raleway', 'Segoe UI';
+    text-shadow: 2px 2px 3px #131313;
+}
+
 .navbar-light .navbar-nav .nav-link:hover { /* Navigation links hover effects */
     color: white;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.63);
@@ -22,17 +76,15 @@ body { /* dark mode best mode */
 .navbar-light .navbar-nav .nav-link { /* Home, About, Skills, etc... */
     font-family: 'Raleway', 'Segoe UI';
     color: rgb(255, 74, 74);
-    font-size: 25px;
-    
+    font-size: 25px;    
 }
 
 .bg-dark { /* Navigation bar color */
     background-color: #2e3033!important; 
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.83);
-
 }
 
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-toggler { /* Bootstrap navbar hamburger */
     border-color: rgb(255, 74, 74);
     border-radius: .45rem;
     border-width: 2px;
@@ -46,76 +98,55 @@ body { /* dark mode best mode */
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.83);
-    
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.83); 
   }
 
-  hr {
+
+/* ================================== About Section ================================== */
+
+  hr { /* Horizonal Rule color & size */
       background-color: white;
       margin-left: 12vw;
       margin-right: 12vw;
   }
 
-  h1 {
+  h1 { /* Title elements */
+    font-family: 'Raleway', 'Segoe UI';
+    font-size: 75px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+    padding: 0 10% 0 10%;
+    text-align: center;
+  }
+
+  .hello-text{ /* Hello! */
+    margin-left: 7vw;
     font-family: 'Raleway', 'Segoe UI';
     font-size: 75px;
   }
 
-  .hello-text{
-    margin-left: 6vw;
-  }
-
-  .body-items{
+  .body-items{ /* Pushes the "About" section text inward */
       margin-left: 7vw;
       margin-right: 7vw;
   }
-  
-  .font-weight-light { /* Name on picture "Chase Kuhn" */
-      font-size: 120px;
-      /*font-family: "Gloria Hallelujah", Raleway, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-      font-family: 'Raleway', 'Segoe UI';
-      text-shadow: 2px 2px 3px #131313;
 
-  }
-
-  .font-weight-light:hover{
-      font-size: 120px;
-      transition: 1s;
-  }
-
-  .lead { /* Second text "Software Developer" */
-      font-size: 40px;
-      font-family: 'Raleway', 'Segoe UI';
-      text-shadow: 2px 2px 3px #131313;
-  }
-
-  ul#horizontal li { /* centers */
-    display:inline;
-    margin: center;
+  ul { /*  centers uls */
+    padding-inline-start: 0%;   
 }
 
-ul { /* perfectly centers uls */
-padding-inline-start: 0%;   
-}
+/* ================================== Skills ================================== */
 
-.icons{
-    width: 50px;
-    height: 50px;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-}
-.skills{
-  width: 70px;
-  height: 70px;
-}
 
-.skill-div {
+.skill-div { /* Skill tag section */
     width: 40vh;
     text-align: center;
     margin: 0 auto;
 }
 
-.skill-text{
+.skill-text{ /* Skills tag text */
     color: rgb(255, 74, 74);
     position: relative;
     background: transparent;
@@ -131,24 +162,11 @@ padding-inline-start: 0%;
     text-decoration: none;
 }
 
-ul#skillsalign li { /* centers */
-    padding: 30px;
-    border: 40px;
-    display:inline;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin: center;
-}
 
-.projects{
-  width: 250px;
-  height: 250px;
-  margin: 15px;
-  padding: 3px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
-}
+/* ================================== Projects ================================== */
 
-.card.mb-3{
+
+.card.mb-3{ /* Project cards */
     background-color: #1d1f20;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.507);
@@ -157,54 +175,61 @@ ul#skillsalign li { /* centers */
     margin-right: 5px;
 }
 
-.card.mb-3:hover{
+.card.mb-3:hover{ /* Project card hover effect */
     background-color: #181a1a;
     border-color: white;
     border-width: 1px;
     color: white;
-    transition: 0.5s;
+    transition: 0.3s;
+    opacity: 0.6;
 }
 
-.row-eq-height {
+.row-eq-height { /* Makes the card elements responsive & all the same height */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:         flex;
-  }
+    display: flex;
+}
 
-.project-title{
+.project-title{ /* Project Titles */
     font-family: 'Raleway', 'Segoe UI';
     color: white;
     font-size: 30px;
 }
 
-.project-text{
+.project-text{ /* Project description */
     color: white;
     font-size: 15px;
     text-decoration: none;
-
 }
 
-.projects:hover{
-    opacity: 0.3;
-    transition: 0.4s ease-out;
-  }
-  
-html{ /* navigation links transition to anchor smoothly */
-    scroll-behavior: smooth;
+.center-element{ /* centers the titles on projects */
+    text-align: center;
 }
 
 
-.icons:hover{ /* slight opacity added to links when hovered */
+/* ================================== Footer/Icons ================================== */
+
+
+.icons { /* Github & Linkedin Icons */
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.icons:hover{ /* Icon hover effect */
     opacity: 0.4;
     transition: 0.4s
 }
 
-.center-element{ /* centers an element */
-    text-align: center;
+ul#horizontal li { /* Icons displayed inline & centered */
+    display: inline;
+    margin: center;
 }
 
-  footer { /* footer props */
+
+footer { /* footer props */
     position: bottom;
     height: 140px;
     padding-top: 30px;
@@ -216,30 +241,3 @@ html{ /* navigation links transition to anchor smoothly */
     text-align: center;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.83);
  }
-
- .jumbotron-fluid{ /* bootstrap insert box */
-    background-color: #2e3033;
-    color: white;
-    border: 10px;
-    margin-bottom: 60px;
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,5);
-    border-radius: 0.4vw
- }
-
- ::selection {
-    background: #ff9f9f; /* WebKit/Blink Browsers */
-  }
-
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-::-webkit-scrollbar-track {
-    background-color: #1b1b1b;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgb(255, 74, 74);
-}
