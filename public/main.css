@@ -1,0 +1,100 @@
+/* ================================== HTML & Body ================================== */
+
+/* Site background color */
+body {
+    background-image: linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* html/body properties */
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+::selection { /* Selection Hover */
+    background: #9fffef;
+  }
+
+/* Header area */
+.masthead {
+    margin-top: 50px;
+    font-size: 75px;
+    color: white;
+    font-weight: 600;
+} 
+
+/* "Chase Kuhn" Text */
+h1.font-weight-light {
+    font-size: 120px;
+    font-family: 'Raleway', 'Segoe UI';
+    width:100%;
+    animation: 0.5s ease-out 0s 1 slideIn;
+}
+
+/* Name slide in */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/* "Front-End Developer" Text */
+.lead {
+    font-size: 40px;
+    font-family: 'Raleway', 'Segoe UI';
+    animation: 1s ease-in 0s 1 fadeIn;
+}
+
+/* "🛠 Site redesign in progress 🛠" Text */
+.prog {
+    font-family: 'Raleway', 'Segoe UI';
+    font-size: 20px;
+    animation: 1s ease-in 0s 1 fadeIn;
+    margin-bottom: 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        animation-delay: 3s;
+        opacity: 100%;
+    }
+  }
+
+/* ================================== Icons ================================== */
+
+/* Github & Linkedin Icons */
+.icons {
+    width: 50px;
+    height: 50px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    animation: 1s ease-in 0s 1 fadeIn;
+}
+
+/* Icon hover effect */
+.icons:hover{
+    opacity: 0.4;
+    transition: 0.4s
+}
+
+/* Icons displayed inline & centered */
+ul#horizontal li {
+    display: inline;
+    margin: center;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
