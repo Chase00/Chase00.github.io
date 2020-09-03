@@ -2,17 +2,83 @@
 
 /* Site background color */
 body {
-    background-image: linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
-    background-repeat: no-repeat;
-    margin: 0;
+    background-image: linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 80%);
+    /* background-repeat: no-repeat; */
 }
 
 /* html/body properties */
 html, body{
+    margin-top: -30px;
     height: 100%;
-    width: 100%;
+    background-color: white;
     scroll-behavior: smooth;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.content {
+    width: 100%;
+    background-color: white
+}
+
+.projects {
+    margin: 0 5% 0 5%;
+    text-align: center;
+}
+
+h1.project-text {
+    font-size: 4em;
+    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Raleway', 'Segoe UI';
+    font-weight: 600;
+    text-align: left;
+}
+
+.card {
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.507);
+    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin: 30px 0 0 30px;
+}
+
+.card-body {
+    padding: 0px 12px 20px 12px;
+    height: 10em;
+}
+
+.project-title{ /* Project Titles */
+    font-family: 'Raleway', 'Segoe UI';
+    color: rgb(71, 71, 71);
+    font-size: 25px;
+    text-align: left;
+}
+
+.skill-text{ /* Skills tag text */
+    position: relative;
+    background: transparent;
+    font-size: 18px;
+    border-color: rgb(49, 148, 194);
+    -webkit-text-fill-color: rgb(49, 148, 194);
+    border-style: solid;
+    border-width: 1.4px;
+    padding: 3px 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 0.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.svg-icons {
+    color: rgb(49, 148, 194);
+    float: right;
+    font-size: 17px;
+    margin-left: 15px;
 }
 
 ::selection { /* Selection Hover */
@@ -21,6 +87,7 @@ html, body{
 
 /* Header area */
 .masthead {
+    height: 100%;
     margin-top: 50px;
     font-size: 75px;
     color: white;
@@ -97,4 +164,3 @@ ul#horizontal li {
 ul {
     padding-inline-start: 0;
 }
-
