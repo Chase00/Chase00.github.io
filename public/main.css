@@ -138,8 +138,18 @@ h1.font-weight-light {
       opacity: 0;
     }
     100% {
-        animation-delay: 3s;
+        animation-delay: 4s;
         opacity: 100%;
+    }
+  }
+
+  @keyframes fadeInIcons {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        animation-delay: 4s;
+        opacity: 60%;
     }
   }
 
@@ -150,7 +160,7 @@ h1.font-weight-light {
     width: 55px;
     height: 55px;
     opacity: 0.6;
-    animation: 1s ease-in 0s 1 fadeIn;
+    animation: 1s ease-in 0s 1 fadeInIcons;
 }
 
 /* Icon hover effect */
