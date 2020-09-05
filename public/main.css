@@ -1,10 +1,20 @@
-/* ================================== HTML & Body ================================== */
+/* ================================== HTML & Header ================================== */
 
-/* Site background color */
+/* Media query (Needs to be expanded on) */
+
+@media screen and (max-width: 600px) {
+    h1.font-weight-light {
+        font-size: 70px;
+    }
+    .lead {
+        font-size: 2rem;
+    }
+}
+
+/* Header background color */
 
 body {
     background-image: linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 80%);
-    /* background-repeat: no-repeat; */
 }
 
 /* html/body properties */
@@ -14,106 +24,11 @@ html, body {
     height: 100%;
     background-color: white;
     scroll-behavior: smooth;
-    /* overflow: hidden; */
 }
 
-.content {
-    width: 100%;
-    background-color: white;
-}
-
-.projects {
-    margin: 0 5% 0 5%;
-    text-align: center;
-}
-
-h1.project-text {
-    font-size: 3em;
-    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Raleway', 'Segoe UI';
-    font-weight: 800;
-    text-align: center;
-}
-
-.text {
-    font-size: 1.3em;
-    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Raleway', 'Segoe UI';
-    font-weight: 800;
-    text-align: center;
-}
-
-.important-text {
-    -webkit-text-fill-color: rgb(26, 146, 202);
-}
-
-hr {
-    border: 1;
-    margin: 3em auto;
-    max-width: 50%;
-    border-width: 0 0 2px;
-    color: rgb(235, 235, 235);
-    border-style: solid;
-    border-radius: 10px;
-}
-
-.card {
-    border-radius: 5px;
-    border: 0;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.507);
-    color: white;
-    font-weight: 600;
-    margin: 30px 0 0 30px;
-}
-
-.card-body {
-    padding: 0px 12px 20px 12px;
-    height: 10em;
-}
-
-.project-title {
-    /* Project Titles */
-    font-family: 'Raleway', 'Segoe UI';
-    font-size: 25px;
-    text-align: left;
-    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 120%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.skill-text {
-    /* Skills tag text */
-    position: relative;
-    background: transparent;
-    font-size: 14px;
-    border-color: rgb(49, 148, 194);
-    -webkit-text-fill-color: rgb(49, 148, 194);
-    border-style: solid;
-    border-width: 1.4px;
-    padding: 3px 15px;
-    margin-bottom: 5px;
-    display: inline-block;
-    border-radius: 0.6em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.svg-icons {
-    float: right;
-    font-size: 17px;
-    margin-left: 15px;
-}
-
-.svg-icons:hover {
-    opacity: 0.6;
-}
+/* Selection Hover */
 
 ::selection {
-    /* Selection Hover */
     background: #9fffef;
 }
 
@@ -137,17 +52,6 @@ h1.font-weight-light {
     border-color: white;
 }
 
-/* Name slide in */
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 /* "Web Developer" Text */
 
 .lead {
@@ -159,14 +63,17 @@ h1.font-weight-light {
     margin-bottom: 0px;
 }
 
-@media screen and (max-width: 600px) {
-    h1.font-weight-light {
-        font-size: 70px;
+/* Name slide in */
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
     }
-    .lead {
-        font-size: 2rem;
+    100% {
+        transform: translateX(0);
     }
 }
+
 /* Fade-in animation */
 
 @keyframes fadeIn {
@@ -188,57 +95,177 @@ h1.font-weight-light {
         opacity: 60%;
     }
 }
-/* ================================== Overlay ================================== */
 
-.hvrbox,
-.hvrbox * {
-	box-sizing: border-box;
+/* ================================== Body / Projects ================================== */
+
+/* Makes the projects section white */
+
+.content {
+    width: 100%;
+    background-color: white;
 }
+
+.projects {
+    margin: 0 5% 0 5%;
+    text-align: center;
+}
+
+/* "Projects" Text */
+
+h1.project-text {
+    font-size: 3em;
+    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Raleway', 'Segoe UI';
+    font-weight: 800;
+    text-align: center;
+}
+
+/* "Hover of a project.." Text */
+
+.text {
+    font-size: 1.3em;
+    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Raleway', 'Segoe UI';
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Span for emphasised words  */
+
+.important-text {
+    -webkit-text-fill-color: rgb(26, 146, 202);
+}
+
+/* Horizontal rule */
+
+hr {
+    border: 1;
+    margin: 3em auto;
+    max-width: 50%;
+    border-width: 0 0 2px;
+    color: rgb(235, 235, 235);
+    border-style: solid;
+    border-radius: 10px;
+}
+
+/* Project Card */
+
+.card {
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.507);
+    color: white;
+    font-weight: 600;
+    margin: 30px 0 0 30px;
+}
+
+/* Card body (below the image) */
+
+.card-body {
+    padding: 0px 12px 20px 12px;
+    height: 10em;
+}
+
+/* Title of projects "PomoStudy" */
+
+.project-title {
+    font-family: 'Raleway', 'Segoe UI';
+    font-size: 25px;
+    text-align: left;
+    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SVG icons for links to code or live site */
+
+.svg-icons {
+    float: right;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
+.svg-icons:hover {
+    opacity: 0.6;
+}
+
+/* Skill tags */
+
+.skill-text {
+    position: relative;
+    background: transparent;
+    font-size: 14px;
+    border-color: rgb(49, 148, 194);
+    -webkit-text-fill-color: rgb(49, 148, 194);
+    border-style: solid;
+    border-width: 1.4px;
+    padding: 3px 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 0.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* ================================== Overlay (Hover) ================================== */
+
+.hvrbox, .hvrbox * {
+    box-sizing: border-box;
+}
+
 .hvrbox {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	max-width: 100%;
-	height: auto;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
 }
+
 .hvrbox img {
-	max-width: 100%;
+    max-width: 100%;
 }
+
 .hvrbox .hvrbox-layer_bottom {
-	display: block;
+    display: block;
 }
+
 .hvrbox .hvrbox-layer_top {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
 }
-.hvrbox:hover .hvrbox-layer_top,
-.hvrbox.active .hvrbox-layer_top {
-	opacity: 1;
+
+.hvrbox:hover .hvrbox-layer_top, .hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
 }
+
 .hvrbox .hvrbox-text {
-	text-align: center;
-	font-size: 18px;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* ================================== Icons ================================== */
@@ -251,8 +278,6 @@ h1.font-weight-light {
     opacity: 0.6;
     animation: 1s ease-in 0s 1 fadeInIcons;
 }
-
-/* Icon hover effect */
 
 .icons:hover {
     opacity: 1;
@@ -272,11 +297,15 @@ ul {
 
 /* ================================== Footer ================================== */
 
+/* ";copy Chase Kuhn" Text */
+
 .footer-text {
     color: #c5c5c5;
     font-family: monospace;
     font-size: 16px;
 }
+
+/* Bottom Github & Linkedin Icons */
 
 .footer-icons {
     filter: invert(23%) sepia(17%) saturate(1734%) hue-rotate(158deg) brightness(89%) contrast(92%);
@@ -285,8 +314,6 @@ ul {
     opacity: 70%;
     margin: 0 7px 30px 7px;
 }
-
-/* Icon hover effect */
 
 .footer-icons:hover {
     opacity: 1;
