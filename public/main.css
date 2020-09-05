@@ -1,16 +1,5 @@
 /* ================================== HTML & Header ================================== */
 
-/* Media query (Needs to be expanded on) */
-
-@media screen and (max-width: 600px) {
-    h1.font-weight-light {
-        font-size: 70px;
-    }
-    .lead {
-        font-size: 2rem;
-    }
-}
-
 /* Header background color */
 
 body {
@@ -318,4 +307,17 @@ ul {
 .footer-icons:hover {
     opacity: 1;
     transition: 0.2s
+}
+
+/* =============================================================================== */
+
+/* Media query (Needs to be expanded on) */
+
+@media screen and (max-width: 600px) {
+    h1.font-weight-light {
+        font-size: 70px;
+    }
+    .lead {
+        font-size: 2rem;
+    }
 }
