@@ -1,13 +1,15 @@
 /* ================================== HTML & Body ================================== */
 
 /* Site background color */
+
 body {
     background-image: linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 80%);
     /* background-repeat: no-repeat; */
 }
 
 /* html/body properties */
-html, body{
+
+html, body {
     margin-top: -30px;
     height: 100%;
     background-color: white;
@@ -26,13 +28,23 @@ html, body{
 }
 
 h1.project-text {
-    font-size: 4em;
-    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 60%);
+    font-size: 3em;
+    background: -webkit-linear-gradient(19deg, rgb(0, 94, 138) 0%, rgb(113, 222, 255) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Raleway', 'Segoe UI';
-    font-weight: 600;
-    text-align: left;
+    font-weight: 800;
+    text-align: center;
+}
+
+hr {
+    border: 1;
+    margin: 3em auto;
+    max-width: 50%;
+    border-width: 0 0 2px;
+    color: rgb(235, 235, 235);
+    border-style: solid;
+    border-radius: 10px;
 }
 
 .card {
@@ -51,17 +63,19 @@ h1.project-text {
     height: 10em;
 }
 
-.project-title{ /* Project Titles */
+.project-title {
+    /* Project Titles */
     font-family: 'Raleway', 'Segoe UI';
     color: rgb(71, 71, 71);
     font-size: 25px;
     text-align: left;
 }
 
-.skill-text{ /* Skills tag text */
+.skill-text {
+    /* Skills tag text */
     position: relative;
     background: transparent;
-    font-size: 18px;
+    font-size: 14px;
     border-color: rgb(49, 148, 194);
     -webkit-text-fill-color: rgb(49, 148, 194);
     border-style: solid;
@@ -81,20 +95,23 @@ h1.project-text {
     margin-left: 15px;
 }
 
-::selection { /* Selection Hover */
+::selection {
+    /* Selection Hover */
     background: #9fffef;
-  }
+}
 
 /* Header area */
+
 .masthead {
     height: 100%;
     margin-top: 50px;
     font-size: 75px;
     color: white;
     font-weight: 600;
-} 
+}
 
 /* "Chase Kuhn" Text */
+
 h1.font-weight-light {
     font-size: 120px;
     font-family: 'Raleway', 'Segoe UI';
@@ -104,16 +121,18 @@ h1.font-weight-light {
 }
 
 /* Name slide in */
+
 @keyframes slideIn {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
 /* "Web Developer" Text */
+
 .lead {
     font-size: 2.4rem;
     font-weight: 600;
@@ -130,32 +149,34 @@ h1.font-weight-light {
     .lead {
         font-size: 2rem;
     }
-  }
+}
 
 /* Fade-in animation */
+
 @keyframes fadeIn {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
         animation-delay: 4s;
         opacity: 100%;
     }
-  }
+}
 
-  @keyframes fadeInIcons {
+@keyframes fadeInIcons {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
         animation-delay: 4s;
         opacity: 60%;
     }
-  }
+}
 
 /* ================================== Icons ================================== */
 
 /* Github & Linkedin Icons */
+
 .icons {
     width: 55px;
     height: 55px;
@@ -164,12 +185,14 @@ h1.font-weight-light {
 }
 
 /* Icon hover effect */
-.icons:hover{
+
+.icons:hover {
     opacity: 1;
     transition: 0.2s
 }
 
 /* Icons displayed inline & centered */
+
 ul#horizontal li {
     display: inline;
     margin: center;
