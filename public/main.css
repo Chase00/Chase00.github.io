@@ -19,7 +19,7 @@ html, body {
 
 .content {
     width: 100%;
-    background-color: white
+    background-color: white;
 }
 
 .projects {
@@ -200,4 +200,27 @@ ul#horizontal li {
 
 ul {
     padding-inline-start: 0;
+}
+
+/* ================================== Footer ================================== */
+
+.footer-text {
+    color: #c5c5c5;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.footer-icons {
+    filter: invert(23%) sepia(17%) saturate(1734%) hue-rotate(158deg) brightness(89%) contrast(92%);
+    width: 40px;
+    height: 40px;
+    opacity: 70%;
+    margin: 0 7px 30px 7px;
+}
+
+/* Icon hover effect */
+
+.footer-icons:hover {
+    opacity: 1;
+    transition: 0.2s
 }
